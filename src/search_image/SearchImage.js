@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Grid } from "@material-ui/core";
 import { withRouter } from "react-router-dom";
 import { handleProductClick2 } from "../utils/gautils";
-import { renderBlueSpinner } from "../utils/jsxUtils";
+import { sorting } from "../utils/jsxUtils";
 import { CircularLoading } from "../utils/loadingutils";
 import SearchImageList from "./SearchImageList";
 import ImageCropper from "./ImageCropper";
@@ -121,25 +121,6 @@ const SearchImage = ({history}) => {
 
   const handleRecrop = () => {
     setCropImg(JSON.parse(window.sessionStorage.getItem("originalImg")));
-  };
-
-  const sorting = (goods, sort) => {
-    let arr=[];
-    switch(sort){
-      case "recomm" :
-        arr = goods.sort(function(a,b){return a["recommends"]-b["recommends"]});
-        return arr;
-      case "orderCnt":
-        arr = goods.sort(function(a,b){return b["sales"]-a["sales"]})
-        return arr;
-      case "lowPrice":
-        return goods.sort(function(a,b){return a["price"]-b["price"]})
-      case "highPrice":
-        arr = goods.sort(function(a,b){return b["price"]-a["price"]})
-        return arr;
-      default: 
-        return goods
-    }
   };
 
   const sortGoods = (items, type) => {
