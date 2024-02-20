@@ -21,6 +21,7 @@ REACT, styled-components,
 2. 이미지 크롭 기능
 - 라이브러리: react-image-crop (크롭기능)
 - 백엔드와의 협업 : 크롭 이미지 검색 기능 처리할 수 있도록 데이터 통신.
+- third-party 라이브러리 중국 업체와의 소통리딩
 <img src='https://raw.githubusercontent.com/Lee-ji-soo/flyingcat/main/gif/hw2.gif'/>
 <br>
 <br>
