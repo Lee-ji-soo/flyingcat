@@ -3,7 +3,6 @@
 
 # Flyingcat ↓↓↓↓↓↓↓ Please look at the content of below.
  Flyingcat shoppingmall <br>
- real site : https://www.heukwoonono.com/
 ## lang
 REACT, styled-components,
 
